@@ -1,0 +1,3 @@
+Exemple démontrant comment on peut faire référence à un fichier de propriétés pour obtenir des configurations. 
+
+Le projet doit être compilé, par exemple avec Eclipse. Le répertoire WebContent contient les fichiers à déployer dans le JAR.

@@ -1,0 +1,8 @@
+Ces 3 exemples montrent comment Javascript peut être utilisé pour contrôler une page côté client.
+
+exempleCGI-AJAX.htm: Appel à un script CGI (ajax-demo1.cgi). Hébergé sur un domaine externe, ce qui fait en sorte que votre navigateur peut refuser son exécution pour violation de la politique d'origine des scripts.
+
+exempleDHTML1.htm: Page affichant une image en grand format lorsqu'elle est survolée.
+
+exempleDHTML2.htm: Carousel d'images contrôlé par Javascript 
+

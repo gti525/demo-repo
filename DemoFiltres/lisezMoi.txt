@@ -1,0 +1,3 @@
+Cet exemple démontre une des fonctionnalités possibles d'un filtre d'interception JEE. Les appels aux images Bitmap (.bmp) sont attrapés par le FiltreEncryption et permet de faire une compression GZIP sur le fichier image.
+
+Ce répertoire contient la version compilée de même que le code source du projet. Le tout doit être placé au bon endroit dans la configuration et doit être déployé sur le serveur.

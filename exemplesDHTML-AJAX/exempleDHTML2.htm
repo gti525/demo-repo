@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<script type="text/javascript">
+		couvertures=new Array();
+		couvertures[0]="images/matrix.jpg";
+		couvertures[1]="images/bladeRunner.jpg";
+		couvertures[2]="images/reservoirDogs.jpg";
+		quantite=couvertures.length-1;
+		i=0;
+
+		titres=new Array();
+		titres[0]="The Matrix";
+		titres[1]="Blade Runner";
+		titres[2]="Reservoir Dogs";
+
+		function premier()
+		{
+			document.getElementById('zoneimage').src=couvertures[0];
+			document.getElementById('zonetitre').innerHTML=titres[0];
+			i=0;
+		}
+
+		function precedent()
+		{	
+			if (i>0){
+				i--;
+				document.getElementById('zoneimage').src=couvertures[i];
+				document.getElementById('zonetitre').innerHTML=titres[i];
+			}else{
+				dernier();
+			}
+		}
+
+		function suivant()
+		{
+			if (i<quantite){
+				i++;
+				document.getElementById('zoneimage').src=couvertures[i];
+				document.getElementById('zonetitre').innerHTML=titres[i];
+			}else{
+				premier();
+			}
+		}
+
+		function dernier()
+		{
+			document.getElementById('zoneimage').src=couvertures[quantite];
+			document.getElementById('zonetitre').innerHTML=titres[quantite];
+			i=quantite;
+		}
+		</script>
+	</head>
+
+	<body>
+		<center>
+			<form>
+			<input type="button" value="<<" onclick="premier()">
+			<input type="button" value="<" onclick="precedent()">
+			<input type="button" value=">" onclick="suivant()">
+			<input type="button" value=">>" onclick="dernier()">
+			</form>
+			<h2 id="zonetitre">The Matrix</h2>
+			<br>
+			<img id="zoneimage" src="images/matrix.jpg" width="745" height="500" />
+		</center>
+	</body>
+</html>

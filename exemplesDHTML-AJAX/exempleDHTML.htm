@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<script type="text/javascript">
+		function moveover(id){
+			document.getElementById(id).width="745";
+			document.getElementById(id).height="500";
+		}
+
+		function moveback(id){
+			document.getElementById(id).width="149";
+			document.getElementById(id).height="100";
+		}
+		</script>
+	</head>
+
+	<body>
+		<b>Couvertures de DVD</b>
+		<br />
+		<img id="image1" src="images/matrix.jpg"
+			onMouseOver="moveover(this.id)"
+			onMouseOut="moveback(this.id)"
+			width="149" height="100" /> 
+		<br />
+		<img id="image2" src="images/bladeRunner.jpg"
+			onMouseOver="moveover(this.id)"
+			onMouseOut="moveback(this.id)"
+			width="149" height="100" /> 
+		<br />
+		<img id="image3" src="images/reservoirDogs.jpg"
+			onMouseOver="moveover(this.id)"
+			onMouseOut="moveback(this.id)"
+			width="149" height="100" /> 
+		<br />
+	</body>
+</html>
+

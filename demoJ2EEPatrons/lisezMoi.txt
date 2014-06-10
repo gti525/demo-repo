@@ -1,0 +1,14 @@
+Cet exemple permet de voir en action certains des patrons présentés dans le cours, soit
+
+Front Controller
+Business Delegate
+Data Access Object
+Transfer Object (BeanMessage)
+View Helper
+
+Ce projet doit être déployé sur un serveur JEE.
+
+Il est à noter que ce projet contient les classes compilées, de même que le code source. Si on veut compiler le code avec Eclipse, par exemple, il faut placer les classes dans un répertoire de sources et respecter la structure de paquetage.
+
+Note: Il est nécessaire de modifier l'emplacement où sera enregistré le fichier contenant les messages enregistrés. La variable est par défaut à 
+fichier = "c:\\fichierMessages.txt". Modifiez cette valeur selon votre configuration.
