@@ -1,0 +1,12 @@
+===========================================================
+Ajout/Modification du carnet d'adresses:
+
+Prénom : $personne.prenom
+Nom : $personne.nomDeFamille
+#if ($personne.compagnie == "")
+Aucune compagnie
+#else
+Compagnie : $personne.compagnie
+#end
+
+===========================================================
