@@ -1,0 +1,89 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'serveur_allo' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 warn package.json demo_gti525@0.0.1 No description
+6 warn package.json demo_gti525@0.0.1 No repository field.
+7 warn package.json demo_gti525@0.0.1 No README data
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'serveur_allo', null ]
+10 verbose cache add name=undefined spec="serveur_allo" args=["serveur_allo",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'serveur_allo',
+11 verbose parsed url   path: 'serveur_allo',
+11 verbose parsed url   href: 'serveur_allo' }
+12 silly lockFile 1db1aa76-serveur-allo serveur_allo
+13 verbose lock serveur_allo C:\Users\Eric\AppData\Roaming\npm-cache\1db1aa76-serveur-allo.lock
+14 silly lockFile 1db1aa76-serveur-allo serveur_allo
+15 silly lockFile 1db1aa76-serveur-allo serveur_allo
+16 verbose addNamed [ 'serveur_allo', '' ]
+17 verbose addNamed [ null, '*' ]
+18 silly lockFile a71d911e-serveur-allo serveur_allo@
+19 verbose lock serveur_allo@ C:\Users\Eric\AppData\Roaming\npm-cache\a71d911e-serveur-allo.lock
+20 silly addNameRange { name: 'serveur_allo', range: '*', hasData: false }
+21 verbose request where is /serveur_allo
+22 verbose request registry https://registry.npmjs.org/
+23 verbose request id f1c9b65ec586037a
+24 verbose url raw /serveur_allo
+25 verbose url resolving [ 'https://registry.npmjs.org/', './serveur_allo' ]
+26 verbose url resolved https://registry.npmjs.org/serveur_allo
+27 verbose request where is https://registry.npmjs.org/serveur_allo
+28 info trying registry request attempt 1 at 21:57:03
+29 http GET https://registry.npmjs.org/serveur_allo
+30 http 404 https://registry.npmjs.org/serveur_allo
+31 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   'cache-control': 'max-age=0',
+31 verbose headers   'content-length': '51',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Thu, 07 May 2015 01:57:06 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   age: '0',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-atl6231-ATL',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1430963826.864490,VS0,VE80' }
+32 silly registry.get cb [ 404,
+32 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+32 silly registry.get     'content-type': 'application/json',
+32 silly registry.get     'cache-control': 'max-age=0',
+32 silly registry.get     'content-length': '51',
+32 silly registry.get     'accept-ranges': 'bytes',
+32 silly registry.get     date: 'Thu, 07 May 2015 01:57:06 GMT',
+32 silly registry.get     via: '1.1 varnish',
+32 silly registry.get     age: '0',
+32 silly registry.get     connection: 'keep-alive',
+32 silly registry.get     'x-served-by': 'cache-atl6231-ATL',
+32 silly registry.get     'x-cache': 'MISS',
+32 silly registry.get     'x-cache-hits': '0',
+32 silly registry.get     'x-timer': 'S1430963826.864490,VS0,VE80' } ]
+33 silly lockFile a71d911e-serveur-allo serveur_allo@
+34 silly lockFile a71d911e-serveur-allo serveur_allo@
+35 error 404 404 Not Found: serveur_allo
+35 error 404
+35 error 404 'serveur_allo' is not in the npm registry.
+35 error 404 You should bug the author to publish it
+35 error 404 It was specified as a dependency of 'demo_gti525'
+35 error 404
+35 error 404 Note that you can also install from a
+35 error 404 tarball, folder, or http url, or git url.
+36 error System Windows_NT 6.2.9200
+37 error command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "serveur_allo"
+38 error cwd C:\gti525\demoNode
+39 error node -v v0.10.35
+40 error npm -v 1.4.28
+41 error code E404
+42 verbose exit [ 1, true ]
