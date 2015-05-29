@@ -1,0 +1,20 @@
+{
+"machines": [
+  {
+    "nom" : "bd-entrepot",
+    "ip" : "10.0.1.88"
+  },
+ {
+    "nom" : "env-dev",
+    "ip" : "10.0.1.116"
+  },
+  {
+    "nom" : "test-Machine1",
+    "ip" : "10.0.1.138"
+  },
+  {
+    "nom" : "http-linux-5",
+    "ip" : "10.0.1.19"
+  }
+]
+}

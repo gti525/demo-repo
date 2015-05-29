@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="appMachines">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Démo Angular + AJAX</title>
+   
+    <script data-require="angular.js@1.2.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js" data-semver="1.2.16"></script>
+    <script src="machines.js"></script>
+  </head>
+
+  <body >
+    <div ng-controller="machineCtrl">
+    <h1>Voici les machines installées dans notre réseau</h1>
+    <br />
+    <i>Cette page est rafraîchie à toutes les secondes</i>
+    <div>
+        <ul>
+            <li ng-repeat="machine in machines">{{ machine.nom + ', ' + machine.ip }}</li>
+        </ul>
+    </div>
+</div>
+  </body>
+
+</html>
