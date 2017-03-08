@@ -16,5 +16,5 @@ module.exports = function (socket) {
     socket.emit('send:message', {
 		  message: data.toString()
 	});
-  }, 5000);
+  }, 3000);
 };
