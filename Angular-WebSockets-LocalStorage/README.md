@@ -10,6 +10,8 @@ Cette démonstration comprend aussi le gestionnaire de sources bower, qui permet
 
 > npm install
 
+> npm install -g bower
+
 > bower install
 
 > node app.js
