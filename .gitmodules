@@ -1,0 +1,3 @@
+[submodule "handlebars-webpack"]
+	path = handlebars-webpack
+	url = https://github.com/LearnWebCode/handlebars-webpack.git
