@@ -1,0 +1,25 @@
+<html>
+<title>
+  Surprise! On change des couleurs dynamiquement dans un SVG!
+</title>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <ellipse ry="143" rx="148" id="face" cy="204.33333" cx="284.5" stroke-width="1.5" stroke="#000" fill="#ffff56"/>
+  <ellipse ry="24" rx="19" id="oeil1" cy="167.33333" cx="225.5" stroke-width="1.5" stroke="#000" fill="#000"/>
+  <ellipse ry="25" rx="18" id="oeil2" cy="168.33333" cx="336.5" stroke-width="1.5" stroke="#000" fill="#000"/>
+  <path id="bouche" d="m239.12915,232.14165l88.33334,0c-9.75703,0 -17.66667,18.80404 -17.66667,42c0,23.19596 7.90964,41.99999 17.66667,41.99999l-88.33334,0l0,0c-9.75703,0 -17.66667,-18.80404 -17.66667,-41.99999c0,-23.19596 7.90964,-42 17.66667,-42z" stroke-width="1.5" stroke="#000" fill="#000"/>
+ </g>
+</svg>
+
+<input type="color" id="picker" value="#FFFF00">
+
+</input>
+
+<script language="javascript">
+  var picker = document.getElementById("picker");
+
+  picker.addEventListener("input", function() {
+      document.getElementById("face").setAttributeNS(null, 'fill', picker.value)
+  }, false); 
+</script>
+</html>
