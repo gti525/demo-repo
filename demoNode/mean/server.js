@@ -9,8 +9,8 @@
     var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 
     // configuration MongoDB =================
-
     mongoose.connect('mongodb://gti525:gti525@ds031872.mongolab.com:31872/demomango');
+
 
     app.use(express.static(__dirname + '/public'));                 // set the static files location /public/img will be /img for users
     app.use(morgan('dev'));                                         // log every request to the console
@@ -23,18 +23,19 @@
     var Todo = mongoose.model('Todo', {
         text : String
     });
-	
+	console.log(Todo.find())
 	// routes Express======================================================================
 
     // api ---------------------------------------------------------------------
     // get all todos
     app.get('/api/todos', function(req, res) {
-
+console.log("get")
         // use mongoose to get all todos in the database
         Todo.find(function(err, todos) {
-
+console.log("find")
             // if there is an error retrieving, send the error. nothing after res.send(err) will execute
             if (err)
+                console.log("ERROR")
                 res.send(err)
 
             res.json(todos); // return all todos in JSON format
@@ -43,7 +44,7 @@
 
     // create todo and send back all todos after creation
     app.post('/api/todos', function(req, res) {
-
+console.log("POST");
         // create a todo, information comes from AJAX request from Angular
         Todo.create({
             text : req.body.text,
